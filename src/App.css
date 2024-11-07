@@ -8,6 +8,12 @@ body {
   align-items: center;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   width: 350px;
 }
@@ -24,16 +30,73 @@ body {
 .balance h2 {
   font-size: 0.8rem;
   text-transform: uppercase;
+  margin: 2.5px;
 }
 
 .balance h3 {
   font-size: 1.6rem;
+  margin: 2.5px;
 }
 
 .incomeExpense {
   display: flex;
+  margin: auto;
   width: 300px;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
   box-shadow: 2px 2px 10px gray;
+}
+
+.incomeExpense div p:first-child{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list{
+  list-style: none;
+}
+
+.list li{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 10px gray;
+}
+
+.list li button{
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 5px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.minus{
+  border-right: 3px solid red;
+}
+
+.plus{
+  border-right: 3px solid green;
+}
+
+label{
+  display: inline-block;
+}
+
+input{
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+}
+
+.addTransaction button{
+  width: 100%;
+  border: none;
+  padding: 5px;
+  background-color: #9c88ff;
+  color: white;
+  cursor: pointer;
 }
